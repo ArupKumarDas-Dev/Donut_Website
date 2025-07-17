@@ -53,8 +53,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 60px;
-    background-color: #222;
+    background-color: linear-gradient(to right, #7112dd74, #fff4f4);
     transition: 0.5s ease;
+    z-index: 2;
   }
   .nav-bar ul {
     display: flex;
@@ -68,3 +69,20 @@ body {
     color: white;
     font-weight: bold;
   }
+  .container {
+    width: 100%;
+    /* max-width: 1200px; */
+    margin: 0 5px;
+    /* padding: 20px; */
+    box-sizing: border-box;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 60px);
+    text-align: center;
+    background: url("assets/Donut3.png");
+    background-size: cover;
+    background-position: center;
+}
