@@ -4,7 +4,7 @@ body {
     overflow-x: hidden;
     height: 100vh;
     cursor: none;
-    background-color: #111;
+    /* background-color: #111; */
     color: white;
     font-family: sans-serif;
   }
@@ -53,7 +53,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 60px;
-    background-color: linear-gradient(to right, #7112dd74, #fff4f4);
+    background: rgba(0, 0, 0, 0.667);
     transition: 0.5s ease;
     z-index: 2;
   }
