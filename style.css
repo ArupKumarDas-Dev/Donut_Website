@@ -72,7 +72,7 @@ body {
   .container {
     width: 100%;
     /* max-width: 1200px; */
-    margin: 0 5px;
+    margin: 0 auto;
     /* padding: 20px; */
     box-sizing: border-box;
   }
@@ -82,7 +82,7 @@ body {
     justify-content: center;
     height: calc(100vh - 60px);
     text-align: center;
-    background: url("assets/Donut3.png");
+    /* background: url("assets/Donut3.png"); */
     background-size: cover;
     background-position: center;
 }
