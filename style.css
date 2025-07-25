@@ -43,9 +43,39 @@ body {
   padding: 0 20px;
 }
 .content{
-  align-items: center;
   padding: 2rem 0;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fbe9f1;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  background: rgba(0, 0, 0, 0.564);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  margin: 2rem 0;
+  padding: 2rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  
 }
+.content button{
+  background-color: #ff99cc;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.content button:hover {
+  background-color: #fbe9f1;
+  color: #000;
+}
+
+
 /* Hero Section */
 .hero-section {
   height: 100vh;
