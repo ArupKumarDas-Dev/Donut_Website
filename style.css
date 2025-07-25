@@ -1,4 +1,8 @@
 /* Reset + Theme */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+
+
 body {
   margin: 0;
   padding: 0;
@@ -58,8 +62,26 @@ body {
   margin: 2rem 0;
   padding: 2rem;
   transition: transform 0.3s ease, background-color 0.3s ease;
-  
 }
+
+.content:hover {
+  transform: translatez(-10px);
+  background-color: rgba(66, 66, 66, 0.067);
+}
+
+.content h2 {
+  font-size: 2rem;
+  /* color: #ff99cc; */
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1.1rem;
+  color: #fbe9f1;
+  margin-bottom: 1.5rem;
+}
+
+
 .content button{
   background-color: #ff99cc;
   color: #fff;
@@ -167,3 +189,30 @@ body {
       box-shadow: 0 0 0 0 rgba(0, 255, 204, 0);
     }
   }
+
+
+  .carousel {
+  overflow: hidden;
+  width: 80%;
+  max-width: 1000px;
+  margin: 10px auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}

@@ -41,3 +41,34 @@ document.addEventListener("click", () => {
     cursorDot.style.backgroundColor = "#00ffcc";
   }, 200);
 });
+
+
+
+let currentIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+function moveToNextSlide() {
+  currentIndex = (currentIndex + 1) % totalSlides;
+  document.querySelector('.carousel-track').style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+setInterval(moveToNextSlide, 3000); // Change every 3 seconds
+
+// Optional: swipe support for touch devices
+let startX = 0;
+const track = document.querySelector('.carousel-track');
+
+track.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].clientX;
+});
+
+track.addEventListener('touchend', (e) => {
+  const endX = e.changedTouches[0].clientX;
+  if (startX - endX > 50) moveToNextSlide(); // Swipe left
+  else if (endX - startX > 50) {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+});
+
