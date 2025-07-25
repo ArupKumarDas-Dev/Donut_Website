@@ -235,3 +235,13 @@ body {
   display: block;
   object-fit: cover;
 }
+
+footer{
+  background: rgba(0, 0, 0, 0.667);
+  color: #fbe9f1;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
