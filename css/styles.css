@@ -15,7 +15,6 @@ body {
   background: rgba(0, 0, 0, 0.667);
   transition: background-color 0.5s ease;
   z-index: 2;
-  
 }
 
 .nav-bar a {
@@ -98,6 +97,9 @@ button:hover {
 }
 
 @media (max-width: 600px) {
+  .nav-bar a{
+    font-size: 0.9em;
+  }
   .order-section {
     padding: 20px;
   }

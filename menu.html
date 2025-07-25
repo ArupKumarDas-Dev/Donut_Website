@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DonutDelight Menu</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
     <div class="nav-bar">
@@ -26,43 +26,56 @@
         <h2>Classic Donut</h2>
         <p>Simple and sweet glazed donut.</p>
         <span>₹50</span>
+        <div class="cart-action">
+  <button class="add-btn">Add to Cart</button>
+  <span class="cart-count">0</span>
+</div>
       </div>
       <div class="menu-item fade-in">
         <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" alt="Chocolate Heaven">
         <h2>Chocolate Heaven</h2>
         <p>Rich chocolate glaze and sprinkles.</p>
         <span>₹70</span>
+        <div class="cart-action">
+  <button class="add-btn">Add to Cart</button>
+  <span class="cart-count">0</span>
+</div>
       </div>
       <div class="menu-item fade-in">
         <img src="assets/p2.jpg" alt="Strawberry Bliss">
         <h2>Strawberry Bliss</h2>
         <p>Fresh strawberry icing and filling.</p>
         <span>₹65</span>
+        <div class="cart-action">
+  <button class="add-btn">Add to Cart</button>
+  <span class="cart-count">0</span>
+</div>
       </div>
       <div class="menu-item fade-in">
         <img src="assets/p3.jpg" alt="Caramel Crunch">
         <h2>Caramel Crunch</h2>
         <p>Sticky caramel glaze with nuts.</p>
         <span>₹75</span>
+        <div class="cart-action">
+  <button class="add-btn">Add to Cart</button>
+  <span class="cart-count">0</span>
+</div>
+      </div>
+      <div class="menu-item fade-in">
+        <img src="assets/p4.jpg" alt="Hazelnut Delight">
+        <h2>Hazelnut Delight</h2>
+        <p>
+          Creamy hazelnut filling with chocolate glaze.
+        </p>
+        <span>₹75</span>
+        <div class="cart-action">
+  <button class="add-btn">Add to Cart</button>
+  <span class="cart-count">0</span>
+</div>
       </div>
     </div>
   </section>
 
-  <script>
-    const items = document.querySelectorAll('.menu-item');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, {
-      threshold: 0.3
-    });
-
-    items.forEach(item => {
-      observer.observe(item);
-    });
-  </script>
+  <script src="js/menu.js"></script>
 </body>
 </html>
