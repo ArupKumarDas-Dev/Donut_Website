@@ -289,3 +289,19 @@ footer{
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 15px 30px rgba(255, 146, 194, 0.25);
 }
+
+@media (max-width: 600px) {
+  .nav-bar{
+    width: auto;
+  }
+  .nav-bar img {
+    height: 150px;
+    margin-right: 0;
+  }
+  .nav-bar a {
+    margin: 0 10px;
+    font-size: 0.6em;
+    /* border: 5px solid blue; */
+    
+  }
+}
